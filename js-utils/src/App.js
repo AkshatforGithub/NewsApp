@@ -6,8 +6,10 @@ import Textfile from './components/Textfile'
 function App() {
   return (
     <>
-    <Navbar title="BLOG" home="HOME" about="About Author" />
-    <Textfile/>
+    <Navbar title="Text Converter" home="HOME" about="About" />
+    <div className="container">
+      <Textfile heading  = "Scribe"/>
+    </div>
     </>
   )
 }
