@@ -1,0 +1,121 @@
+import React, { Component } from "react";
+import NewsItem from "./NewsItem";
+
+export class News extends Component {
+  articlesData = {
+    "status": "ok",
+    "totalResults": 6,
+    "articles": [
+    {
+    "source": {
+    "id": "theverge",
+    "name": "The Verge"
+    },
+    "author": "Umar Shakir",
+    "title": "Samsung Galaxy Watch 7 ‘Ultra’ leaks show a supersized squircle for your wrist",
+    "description": "Leaked pictures of a Samsung Galaxy Watch 7 Ultra show a squarish design similar to Apple’s Ultra smartwatch and an extra button.",
+    "url": "https://www.theverge.com/2024/5/24/24163867/samsunggalaxywatch7ultraleaksquare",
+    "urlToImage": "https://cdn.voxcdn.com/thumbor/yMGhKpAxIHmPAD6pHzQYx8Z1CM=/0x0:2160x1440/1200x628/filters:focal(1080x720:1081x721)/cdn.voxcdn.com/uploads/chorus_asset/file/25462906/Image.jpg",
+    "publishedAt": "20240524T15:13:14Z",
+    "content": "Samsung Galaxy Watch 7 Ultra leaks show a supersized squircle for your wrist\r\nSamsung Galaxy Watch 7 Ultra leaks show a supersized squircle for your wrist\r\n / The leaked pics of this Ultra Samsung Ga… [+1402 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "Gizmodo.com"
+    },
+    "author": "Dua Rashid",
+    "title": "Spotify Is Bricking Car Thing, Leaving Users (Rightfully) Furious",
+    "description": "Spotify recently emailed its customers, informing them that Car Thing will be discontinued and no longer operational after December 9, 2024. This oddlynamed device is the streaming company’s firstever attempt at hardware and allows users to control Spotify …",
+    "url": "https://gizmodo.com/spotifycarthingbrickedmusicstreaming1851498953",
+    "urlToImage": "https://i.kinjaimg.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/0499f2c3b13b9d001a65f96d0825947c.jpg",
+    "publishedAt": "20240524T15:40:00Z",
+    "content": "Spotify recently emailed its customers, informing them that Car Thing will be discontinued and no longer operational after December 9, 2024. This oddlynamed device is the streaming companys firstev… [+1955 chars]"
+    },
+    {
+    "source": {
+    "id": null,
+    "name": "Android Central"
+    },
+    "author": "bradypsnyder@gmail.com (Brady Snyder)",
+    "title": "Spotify killing Car Thing shows why you shouldn't buy hardware from a software company",
+    "description": "Spotify's tonedeaf email to customers informing them their devices will be bricked is the icing on the cake for an awful decision.",
+    "url": "https://www.androidcentral.com/accessories/audio/spotifykillscarthing",
+    "urlToImage": "https://cdn.mos.cms.futurecdn.net/QPMaSwHCGXjqqiQ8QxLQab120080.jpg",
+    "publishedAt": "20240524T18:14:03Z",
+    "content": "What you need to know\r\n<ul><li>Spotify announced that as of Dec. 9, 2024, it will discontinue the Car Thing and render all existing hardware useless. </li><li>The company started selling Car Things i… [+9025 chars]"
+    },
+    {
+        "source": {
+        "id": null,
+        "name": "Techstage.de"
+        },
+        "author": "Thomas Joos",
+        "title": "TechStage | MiniPC Geekom A7 im Test: Viel Power dank Ryzen 9 – endlich auch leise",
+        "description": "Der Geekom A7 hat von sich als starke MacMiniAlternative reden gemacht. Mit Ryzen 9 und 32 GB RAM erscheint die Ausstattung vielversprechend. Im Test von TechStage zeigt sich, ob der MiniPC seinen Vorschusslorbeeren gerecht wird.",
+        "url": "https://www.techstage.de/test/minipcgeekoma7imtestvielpowerdankryzen9endlichauchleise/22w8nl6#article",
+        "urlToImage": "https://ocdn.eu/pulscmstransforms/1/0FUktkqTURBXy8xYmNkZTRmNDg0NGQ4NmFjYjhhNmMwMTcwYjM1YTBiNS5qcGVnkpUDAADNCTzNBTGTBc0EsM0Cdg",
+        "publishedAt": "20240524T15:48:00Z",
+        "content": "Der Geekom A7 ist aktuell das Flaggschiff des Herstellers und das merkt man dem Gerät auch an: edles MetallGehäuse aus Aluminium, ein leistungsstarker AMDRyzen9Prozessor und einer den gängigen Ir… [+7319 chars]"
+        },
+        {
+        "source": {
+        "id": null,
+        "name": "9to5Mac"
+        },
+        "author": "Ryan Christoffel",
+        "title": "iPhone 14 Pro now available from Apple’s refurbished store",
+        "description": "Today Apple has updated its online refurbished store to feature a newly added product. For the first time, the iPhone 14, iPhone 14 Pro, and iPhone 14 Pro Max are now available from Apple as certified refurbished devices. This means you can get one of the mor…",
+        "url": "https://9to5mac.com/2024/05/24/iphone14pronowavailablefromapplesrefurbishedstore/",
+        "urlToImage": "https://i0.wp.com/9to5mac.com/wpcontent/uploads/sites/6/2023/01/iphone14prolosesfastestdownloadcrown.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+        "publishedAt": "20240524T18:51:13Z",
+        "content": "Today Apple has updated its online refurbished store to feature a newly added product. For the first time, the iPhone 14, iPhone 14 Pro, and iPhone 14 Pro Max are now available from Apple as certifie… [+1682 chars]"
+        },
+    {
+    "source": {
+    "id": null,
+    "name": "MacRumors"
+    },
+    "author": "Hartley Charlton",
+    "title": "New Beats Pill Speaker Spotted in Another Database as Launch Nears",
+    "description": "Another regulatory agency has approved Apple's new version of the Beats Pill speaker ahead of its official announcement (via 91mobiles).\n\n\n\n\n\nFollowing its recent appearance in the United States FCC database, the upcoming Beats Pill speaker has now been spott…",
+    "url": "https://www.macrumors.com/2024/05/24/newbeatspillspeakerspotteddatabase/",
+    "urlToImage": "https://images.macrumors.com/t/Wwuc44OOQ9LE_BleGLBmJfQRqB4=/2500x/articlenew/2024/05/NewBeatsPilliOS17.5Feature.jpg",
+    "publishedAt": "20240524T14:33:03Z",
+    "content": "Another regulatory agency has approved Apple's new version of the Beats Pill speaker ahead of its official announcement (via 91mobiles).\r\nFollowing its recent appearance in the United States FCC data… [+1268 chars]"
+}
+    ]
+}
+  constructor() {
+    super();
+    this.state = {
+      articles: this.articlesData.articles,
+      loading: false,
+    };
+  }
+
+  render() {
+    return (
+      <div className="my-3">
+        <div className="container my-4">
+          <h2>NewsMonkey- TopHeadlines</h2>
+          <div className="my-4">
+            <div className="row">
+              {this.state.articles.map((element) => {
+                return <div className="col-md-4" key={element.url}>
+                  <NewsItem 
+                    title={element.title}
+                    description={element.description}
+                    imageUrl={element.urlToImage}
+                  />
+                </div>
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default News;
