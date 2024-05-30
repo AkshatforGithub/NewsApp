@@ -51,8 +51,6 @@ export class News extends Component {
               })}
             </div>
             <div className=" d-flex justify-content-between mt-4">
-              {/* <button type="button" class="btn btn-info " style={{ backgroundColor: '#fb607f', color: 'black',borderColor:'pink'}}> &#8604; Previous</button> */}
-              {/* <button type="button" class="btn btn-info " style={{ backgroundColor: '#fb607f', color: 'black',borderColor:'pink'}}>Next &#8605;</button> */}
               <button
                 type="button"
                 class="btn btn-info "
