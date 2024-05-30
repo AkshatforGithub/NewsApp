@@ -1,0 +1,21 @@
+.custom-navbar {
+    height: 110px; 
+  }
+  
+  .custom-navbar .navbar-brand {
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    font-size:30px;
+  }
+  
+  .custom-navbar .navbar-nav .nav-item .nav-link {
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    font-size:20px;
+  } 
+  
+  .elfsight-app-550dcbc0-5195-4fc9-add7-e6bfc4bb61fb {
+    /* margin-left: 40px; */
+    left: 150px;
+    margin-bottom: 1rem;
+  }
