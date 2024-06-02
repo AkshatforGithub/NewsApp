@@ -10,7 +10,8 @@ export class NewsItem extends Component {
   <div className="card-body">
     <h5 className="card-title">{title}...</h5>
     <p className="card-text">{description}....</p>
-    <p class="card-text"><small>Last updated By {author} on {date}</small></p>
+    <p className="card-text"><small style={{fontWeight:'bold'}}>Published By {!author?"Unknown": author} on {new Date(date).toGMTString()
+}</small></p>
     <a href={`${url}`} target="_blank" className="btn btn-sm btn-dark"style={{ backgroundColor: '#fb607f', color: '#98EECC',borderColor:'pink'}}>Read More</a>
   </div>
 </div>

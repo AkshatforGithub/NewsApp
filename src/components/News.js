@@ -93,11 +93,11 @@ export class News extends Component {
                 return (
                   <div className="col-md-4" key={element.url}>
                     <NewsItem
-                      title={element.title ? element.title.slice(0, 50) : ""}
+                      title={element.title ? element.title.slice(0, 75) : ""}
                       description={
                         element.description
-                          ? element.description.slice(0, 100)
-                          : ""
+                          ? element.description.slice(0, 200)
+                          : "Click To Read The Full News"
                       }
                       imageUrl={element.urlToImage}
                       url={element.url}

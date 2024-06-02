@@ -54,6 +54,13 @@ export class Navbar extends Component {
                   </NavLink>
                 </li>
               </ul>
+              <nav class="navbar" style={{backgroundColor:'#fb607f'}}>
+  <form class="form" style={{display:'flex',alignItems:'center'}}>
+    <input class="form-control" type="search" placeholder="Discover..." aria-label="Search"/>
+    <button class="btn btn-outline-light mx-2" type="submit"style={{ backgroundColor: "rgba(255,234,227,0.3)" }}
+>Search</button>
+  </form>
+</nav>
               <div className="elfsight-app-550dcbc0-5195-4fc9-add7-e6bfc4bb61fb" data-elfsight-app-lazy></div>
             </div>
           </div>
